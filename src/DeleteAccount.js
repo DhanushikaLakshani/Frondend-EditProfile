@@ -2,11 +2,24 @@ import Button from "@mui/material/Button";
 import Delete from "@mui/icons-material/Delete";
 import Send from "@mui/icons-material/Send";
 import React, { useState } from "react";
+import axios from "axios";
 
-const DeleteAccount = () => {
-  const [old, setOld] = useState("");
-  const [newP, setNewP] = useState("");
-  const [confrimP, setConfirmP] = useState("");
+const DeleteAccount = (props) => {
+  const { user, setState, setIsLogin } = props;
+
+  const deleteUser = async () => {
+    try {
+      await axios.delete(`http://localhost:4000/user/delete/${user._id}`);
+      await localStorage.removeItem("user");
+      setIsLogin(false);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const mindChange = () => {
+    setState("edit");
+  };
 
   return (
     <div style={{ height: "100vh", margin: "2rem", marginTop: "5rem" }}>
@@ -24,10 +37,10 @@ const DeleteAccount = () => {
         <div
           style={{ display: "flex", justifyContent: "flex-end", gap: "1rem", marginLeft: "2rem" }}
         >
-          <Button variant="contained" endIcon={<Send />}>
+          <Button onClick={mindChange} variant="contained" endIcon={<Send />}>
             Mind Change
           </Button>
-          <Button variant="outlined" startIcon={<Delete />}>
+          <Button onClick={deleteUser} variant="outlined" startIcon={<Delete />}>
             Delete My Account
           </Button>
         </div>
