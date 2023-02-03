@@ -28,17 +28,20 @@ const EditProfile = () => {
       </div>
 
       <div className="content">
-        <InputComponent label="Name:" value={name} setValue={setname} />
-        <InputComponent label="NIC:" value={nic} setValue={setnic} />
-        <InputComponent label="Email:" value={email} setValue={setemail} />
-        <InputComponent label="Location:" value={location} setValue={setlocation} />
-        <InputComponent label="Bio:" value={bio} setValue={setbio} />
-        <InputComponent label="Personal Website:" value={website} setValue={setwebsite} />
-        <InputComponent label="Portfolio Url:" value={portfolio} setValue={setportfolio} />
-
-        <input type="button" id="update" value="Update"></input>
+        <InputComponent className="txtfield" label="Name:" value={name} setValue={setname} />
+        <InputComponent className="txtfield" label="NIC:" value={nic} setValue={setnic} />
+        <InputComponent className="txtfield" label="Email:" value={email} setValue={setemail} />
+        <InputComponent className="txtfield" label="Location:" value={location} setValue={setlocation} />
+        <InputComponent className="txtfield" label="Bio:" value={bio} setValue={setbio} />
+        <InputComponent className="txtfield" label="Personal Website:" value={website} setValue={setwebsite} />
+        <InputComponent className="txtfield" label="Portfolio Url:" value={portfolio} setValue={setportfolio} />
+      
+      
+      
+        <input clasName='updtbtn' type="button" id="update" value="Update"></input>
       </div>
     </div>
+    
   );
 };
 

@@ -9,20 +9,19 @@ const DeleteAccount = () => {
   const [confrimP, setConfirmP] = useState("");
 
   return (
-    <div style={{ height: "100vh", margin: "2rem", marginTop: "5rem" }}>
-      <div style={{ width: "600px", height: "600px", backgroundColor: "white", padding: "3rem" }}>
+    <div style={{ height: "100px", margin: "3px", marginTop: "5rem" }}>
+      <div style={{ width: "350px", height: "500px", backgroundColor:"white", padding: "3rem" }}>
         <h1> We are sorry to see you go! </h1>
         <p>
           {" "}
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.{" "}
+          If you'd like to reduce your email notifications, you can disable them
+          here or if you just want to change your username,you can do that here.
+          Be advised,account deletion is final.There will be no way to restore your account.
+
+          .{" "}
         </p>
         <div
-          style={{ display: "flex", justifyContent: "flex-end", gap: "1rem", marginLeft: "2rem" }}
+          style={{ display: "flex", justifyContent: "flex-end", gap: "3rem", marginLeft: "1rem" }}
         >
           <Button variant="contained" endIcon={<Send />}>
             Mind Change

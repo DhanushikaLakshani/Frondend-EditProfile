@@ -10,12 +10,12 @@ const Social = () => {
   return (
     <div style={{ height: "100vh", margin: "2rem", marginTop: "5rem" }}>
       <div className="content">
-        <InputComponent label="LinkedIn:" value={linked} setValue={setLined} />
-        <InputComponent label="Twitter:" value={twitter} setValue={setTwitter} />
-        <InputComponent label="Instagram:" value={insta} setValue={setInsta} />
-        <InputComponent label="Facebook:" value={facebook} setValue={setFacebook} />
+        <InputComponent className="txtfield" label="LinkedIn:" value={linked} setValue={setLined} />
+        <InputComponent className="txtfield" label="Twitter:" value={twitter} setValue={setTwitter} />
+        <InputComponent className="txtfield" label="Instagram:" value={insta} setValue={setInsta} />
+        <InputComponent className="txtfield" label="Facebook:" value={facebook} setValue={setFacebook} />
 
-        <input type="button" id="update" value="Update"></input>
+        <input clasName='updtbtn' type="button" id="update" value="Update"></input>
       </div>
     </div>
   );

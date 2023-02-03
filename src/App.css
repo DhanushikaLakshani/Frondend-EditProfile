@@ -6,7 +6,7 @@ body{
   background-repeat:no-repeat; 
 }
 .pic2{
-  display: flex;
+display: flex;
 min-height: 50px;
 max-height: 50px;
 min-width: 50px;
@@ -35,7 +35,7 @@ margin-top: 5px;
   color: white;
   font-weight: bold;
 }
-input{
+.txtfield{
   margin-bottom: 2mm;
   width: 550px;
   height: 25px;
@@ -43,16 +43,14 @@ input{
   border: 1px;
   
 }
-.update{
+.updtbtn{
   padding-bottom: 0px;
-  background-color: rgb(8, 4, 44);
-  color: aliceblue;
+  background-color: rgb(9, 4, 58);
   font-size: 15px;    
   margin-left: 0px;
   width: 90px;
   height: 30px;
   border-radius: 64px;
   border: 0px;
-  
   
 }
